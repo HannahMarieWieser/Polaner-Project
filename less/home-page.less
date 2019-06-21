@@ -1,20 +1,50 @@
 //body
 
+html{
+    height: 95%;
+}
+
 body{
-    background-color: lightpink;
+   // height: 100%;
+    margin: 0px;
+    height: 95%;
+
+    background: linear-gradient(
+        rgba(247, 97, 197, 0.45), 
+        rgba(247, 97, 197, 0.45)
+      ), url(/Polanerpics/purplebackg.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+
+    
+    
 }
 
 .newborder(){
     border: 1px green solid;
 }
 
-.home{
+
+
+.homebox{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    // .newborder();
+    margin: auto;
+    // height: 800px;
+    height: 100%;
+
+
+    background: url(/Polanerpics/pinkfaviconsplash.png) no-repeat center center fixed;
+    background-size: contain;
+    
+    
     
     
     .title{
-        .newborder();
+        // .newborder();
         flex-direction: column;
         display: flex;
         align-items: center;
@@ -22,11 +52,16 @@ body{
         h1{
             font-family:'gilroy-extrabold';
             color:rgb(73, 2, 73);
+            font-size: 80px;
+            margin: 0;
+            margin-top: 10px;
         }
 
         h2{
             font-family: 'gilroy-light';
-            color:rgb(143, 20, 143);
+            color:rgb(165, 34, 165);
+            font-size: 50px;
+            margin: 0;
         }
 
 
@@ -35,28 +70,90 @@ body{
 
     .middlebox{
         display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 1px solid blue;
+        width: 80%;
+        height: 480px;
+
 
         .grapejam{
-            max-width:200px;
+            max-width:330px;
+            // border: 1px solid palegreen;
+            position: relative;
+            left:100px;
         }
         
         .textbox{
             background: white;
-            width:400px;
-            height:300px;
-            border: 1px solid orange;
+            width:420px;
+            height:280px;
+            font-family: 'gilroy-light';
+            color:rgb(165, 34, 165);
+            // border: 1px solid forestgreen;
+            padding-left: 55px;
+
+
+            .innertext{
+               width:91%;
+               display:flex;
+               flex-direction: column;
+               align-items: center;
+
+                h3{
+                    border-bottom: 1px solid purple;
+                    font-size: 35px;
+                    margin-bottom:0px;
+                    padding-bottom:10px;
+                    padding-right: 40px;
+                }
+                            
+                p{
+                    font-size: 15px;
+                }
+
+                .buybutton{
+                    border-radius: 10px;
+                    background-color: rgb(236, 219, 236);
+                    border: none;
+                    box-sizing: border-box;
+                    color:rgb(56, 3, 56);
+                    text-decoration: none;
+                    text-align: center;
+                    padding-left:10px;
+                    padding-right:10px;
+                    height: 25px;
+                    width:120px;
+                    margin-top:12px;
+                    margin-right: 20px;
+                    font-size: 12px;
+                    padding-top:4px;
+                    
+                }
+                
+                a.buybutton:hover{
+                    background-color: rgb(180, 163, 180);
+                }
+
+               
+            }
+
+           
         }
         
 
-
-
-
     }
+}
 
 
 
-
-    .footer{
-        align-items: flex-end;
-    }
+footer{
+    // bottom: 0;
+    // position: absolute; 
+    // height: 5%;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
 }
